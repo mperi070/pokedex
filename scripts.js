@@ -6,7 +6,7 @@ let pokemonList = [
 
 for (let i = 0; i < pokemonList.length; i++) {
     if (pokemonList[i].height > 5) {
-        document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') - Wow, that is big! ' );
+        document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') - Wow, that\'\s big! ' );
     }
     else {
         document.write(pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') ' );
