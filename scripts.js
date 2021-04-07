@@ -4,6 +4,10 @@ let pokemonRepository = (function () {
         {name: 'Empoleon', height: 6, types: ['water', 'steel']},
         {name: 'Grimmsnarl', height: 5, types: ['dark', 'fairy']}
     ];
+
+    function getAll () {
+        return pokemonList;
+    }
 }) ();
 
 
