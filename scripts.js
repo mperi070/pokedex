@@ -19,7 +19,15 @@ let pokemonRepository = (function () {
     }
 })();
 
-
+//Implemented a forEach loop rather than a for loop
+pokemonRepository.getAll().forEach(function(pokemon) {
+    if (pokemon.height > 5) {
+        document.write(pokemon.name + ' (height: ' + pokemon.height + ') - Wow, that\'\s big!<br>');
+    }
+    else {
+        document.write(pokemon.name + ' (height: ' + pokemon.height + ')<br>' );
+    }
+});
 
 // for (let i = 0; i < pokemonList.length; i++) {
 //     if (pokemonList[i].height > 5) {
@@ -29,13 +37,3 @@ let pokemonRepository = (function () {
 //         document.write("<p>" + pokemonList[i].name + ' (height: ' + pokemonList[i].height + ') ' + "</p>");
 //     }
 // }
-
-//Implemented a forEach loop rather than a for loop
-pokemonList.forEach(function(pokemon) {
-    if (pokemon.height > 5) {
-        document.write(pokemon.name + ' (height: ' + pokemon.height + ') - Wow, that\'\s big!<br>');
-    }
-    else {
-        document.write(pokemon.name + ' (height: ' + pokemon.height + ')<br>' );
-    }
-});
