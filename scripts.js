@@ -1,8 +1,8 @@
 let pokemonRepository = (function () {
     let pokemonList = [
-        {name: 'Luxray', height: 4, types: ['electric']},
-        {name: 'Empoleon', height: 6, types: ['water', 'steel']},
-        {name: 'Grimmsnarl', height: 5, types: ['dark', 'fairy']}
+        {name: 'Luxray', height: 4, types: ['Electric']},
+        {name: 'Empoleon', height: 6, types: ['Water', 'Steel']},
+        {name: 'Grimmsnarl', height: 5, types: ['Dark', 'Fairy']}
     ];
 
     function getAll() {
