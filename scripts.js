@@ -5,9 +5,14 @@ let pokemonRepository = (function () {
         {name: 'Grimmsnarl', height: 5, types: ['dark', 'fairy']}
     ];
 
-    function getAll () {
+    function getAll() {
         return pokemonList;
     }
+
+    function add(pokemon) {
+        pokemonList.push(pokemon);
+    }
+    
 }) ();
 
 
