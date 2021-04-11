@@ -21,13 +21,16 @@ let pokemonRepository = (function () {
 
 //Implemented a forEach loop rather than a for loop
 pokemonRepository.getAll().forEach(function(pokemon) {
-    let list = document.querySelector('ul');
-    if (pokemon.height > 5) {
-        document.write(pokemon.name + ' (height: ' + pokemon.height + ') - Wow, that\'\s big!<br>');
-    }
-    else {
-        document.write(pokemon.name + ' (height: ' + pokemon.height + ')<br>' );
-    }
+    let pokemonList = document.querySelector('.pokemon-list');
+    let listItem = document.createElement('li');
+    let button = document.createElement('button');
+    button.innerText
+    // if (pokemon.height > 5) {
+    //     document.write(pokemon.name + ' (height: ' + pokemon.height + ') - Wow, that\'\s big!<br>');
+    // }
+    // else {
+    //     document.write(pokemon.name + ' (height: ' + pokemon.height + ')<br>' );
+    // }
 });
 
 // for (let i = 0; i < pokemonList.length; i++) {
