@@ -1,6 +1,21 @@
+body {
+    background-color: #CC0000;
+}
+
 .button-class {
     border-radius: 12px;
-    border-color: #000000;
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 4px 2px;
+    color: #CC0000;
+    border: 2px #ffffff solid;
+    text-align: center;
+    display: inline-block;
+}
+
+.button-class:hover, .button-class:focus {
+    cursor: pointer;
+    opacity: 0.8;
 }
 
 li {
