@@ -9,6 +9,7 @@ body {
     margin: 4px 2px;
     color: #CC0000;
     border: 2px #ffffff solid;
+    outline: none;
     text-align: center;
     display: inline-block;
 }
