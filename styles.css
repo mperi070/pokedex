@@ -2,3 +2,7 @@
     border-radius: 12px;
     border-color: #000000;
 }
+
+li {
+    list-style: none;
+}
