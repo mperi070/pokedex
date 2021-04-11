@@ -2,6 +2,15 @@ body {
     background-color: #CC0000;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
 .button-class {
     border-radius: 12px;
     background-color: #ffffff;
@@ -11,12 +20,14 @@ body {
     border: 2px #ffffff solid;
     outline: none;
     text-align: center;
-    display: inline-block;
+    /* display: inline-block; */
+    width: 100%;
 }
 
 .button-class:hover, .button-class:focus {
     cursor: pointer;
     opacity: 0.8;
+    color: #000000;
 }
 
 li {
