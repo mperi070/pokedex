@@ -1,1 +1,4 @@
-/*comment*/
+.button-class {
+    border-radius: 12px;
+    border-color: #000000;
+}
