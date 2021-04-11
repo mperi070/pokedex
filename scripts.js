@@ -1,3 +1,4 @@
+//this is an IIFE
 let pokemonRepository = (function () {
     let pokemonList = [
         {name: 'Luxray', height: 4, types: ['Electric']},
@@ -13,9 +14,20 @@ let pokemonRepository = (function () {
         pokemonList.push(pokemon);
     }
 
+    function addListItem(pokemon) {
+        let pokemonList = document.querySelector('.pokemon-list');
+        let listItem = document.createElement('li');
+        let button = document.createElement('button');
+        button.innerText = 'pokemon.name';
+        button.classList.add('button-class');
+        listItem.appendChild(button);
+        pokemonList.appendChild(listItem);
+    }
+
     return {
         getAll: getAll,
-        add: add
+        add: add,
+        addListItem: addListItem
     }
 })();
 
@@ -24,7 +36,7 @@ pokemonRepository.getAll().forEach(function(pokemon) {
     let pokemonList = document.querySelector('.pokemon-list');
     let listItem = document.createElement('li');
     let button = document.createElement('button');
-    button.innerText = 'placeholder';
+    button.innerText = 'pokemon.name';
     button.classList.add('button-class');
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
